@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 12px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background\ image.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 4rem;
+    height: 4rem;
+}
+body>h2{
+    font-size: 1.5rem;
+}
+h2 .one{
+    color: rgb(247, 181, 58);
+}
+h2 .two{
+    color: rgb(255, 123, 71);
+}
+h2 .last{
+    color: gray;
+}
+.counter{
+    display: flex;
+    border: 1px solid rgba(128, 128, 128,0.5);
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+.box{
+    padding: 1rem;
+    align-items: center;
+    height: 6.1rem;
+    width: 6.4rem;
+    margin-right: 0.9rem;
+    position: relative;
+}
+.counter .box::after{
+    content: ":";
+    width: 0.8rem;
+    height: 7rem;
+    position: absolute;
+    top:0.8rem;
+    right: 0;
+    font-size: 2.5rem;
+}
+.counter .box:last-of-type::after{
+    display: none;
+}
+body>p{
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    padding: 0.5rme;
+}
+.form input[type="text"]{
+    width: 24rem;
+    padding: 0.6rem;
+    background-color: transparent;
+    border: 1px solid #80808080;
+    outline: none;
+    border-radius: 0.5rem;
+    color:#fff;
+    margin-bottom: 1rem;
+}
+.form input[type="text"]::placeholder{
+    color:rgba(255, 255, 255,0.7);
+}
+.form button{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+    background-color: cornflowerblue;
+    color: #fff
+}
+.neon{
+    animation: prime 3s ease infinite;
+}
+
+
+@keyframes prime {
+    from{
+        color:rgb(255, 255, 255);
+    }
+    to{
+        color:rgb(0, 195, 255);
+        text-shadow: 0 0 10px #0088aa,
+        0 0 30px #e0dd22,
+        0 0 50px #e0ad22,
+        0 0 100px #fffb00;
+    }
+}
+
+@media (min-width:576px) {
+
+    html{
+        font-size: 16px;
+    }
+}
+@media (min-width:992px) {
+
+    html{
+        font-size: 18px;
+    }
+}
